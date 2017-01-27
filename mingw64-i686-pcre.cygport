@@ -2,7 +2,7 @@ CROSS_HOST="i686-w64-mingw32"
 inherit cross
 
 NAME="mingw64-i686-pcre"
-VERSION=8.39
+VERSION=8.40
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Perl Compatible Regular Expressions for Win32 toolchain"
@@ -16,7 +16,6 @@ SRC_URI="ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${VERSION}.t
 SRC_DIR="pcre-${VERSION}"
 PATCH_URI="
 	fedora/pcre-8.21-multilib.patch
-	fedora/pcre-8.39-Fix-bad-interaction-between-o-and-M-in-pcregrep.patch
 "
 
 NO_AUTOHEADER=1
